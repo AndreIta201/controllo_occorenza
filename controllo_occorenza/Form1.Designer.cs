@@ -32,6 +32,9 @@
             this.txt_n1 = new System.Windows.Forms.TextBox();
             this.lbl_n2 = new System.Windows.Forms.Label();
             this.btn_verifica = new System.Windows.Forms.Button();
+            this.lbl_n3 = new System.Windows.Forms.Label();
+            this.btn_cerca = new System.Windows.Forms.Button();
+            this.txt_n2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_n1
@@ -73,11 +76,41 @@
             this.btn_verifica.UseVisualStyleBackColor = true;
             this.btn_verifica.Click += new System.EventHandler(this.btn_verifica_Click);
             // 
+            // lbl_n3
+            // 
+            this.lbl_n3.AutoSize = true;
+            this.lbl_n3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n3.Location = new System.Drawing.Point(595, 34);
+            this.lbl_n3.Name = "lbl_n3";
+            this.lbl_n3.Size = new System.Drawing.Size(265, 24);
+            this.lbl_n3.TabIndex = 4;
+            this.lbl_n3.Text = "Quale lettere si vuole cercare?";
+            // 
+            // btn_cerca
+            // 
+            this.btn_cerca.Location = new System.Drawing.Point(688, 99);
+            this.btn_cerca.Name = "btn_cerca";
+            this.btn_cerca.Size = new System.Drawing.Size(75, 23);
+            this.btn_cerca.TabIndex = 5;
+            this.btn_cerca.Text = "button1";
+            this.btn_cerca.UseVisualStyleBackColor = true;
+            this.btn_cerca.Click += new System.EventHandler(this.btn_cerca_Click);
+            // 
+            // txt_n2
+            // 
+            this.txt_n2.Location = new System.Drawing.Point(708, 61);
+            this.txt_n2.Name = "txt_n2";
+            this.txt_n2.Size = new System.Drawing.Size(32, 20);
+            this.txt_n2.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(678, 587);
+            this.ClientSize = new System.Drawing.Size(863, 587);
+            this.Controls.Add(this.txt_n2);
+            this.Controls.Add(this.btn_cerca);
+            this.Controls.Add(this.lbl_n3);
             this.Controls.Add(this.btn_verifica);
             this.Controls.Add(this.lbl_n2);
             this.Controls.Add(this.txt_n1);
@@ -95,6 +128,9 @@
         private System.Windows.Forms.TextBox txt_n1;
         private System.Windows.Forms.Label lbl_n2;
         private System.Windows.Forms.Button btn_verifica;
+        private System.Windows.Forms.Label lbl_n3;
+        private System.Windows.Forms.Button btn_cerca;
+        private System.Windows.Forms.TextBox txt_n2;
     }
 }
 
